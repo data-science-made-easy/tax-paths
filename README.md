@@ -11,7 +11,7 @@ International businesses often face significant tax liabilities when transferrin
 - **Optimization algorithm:** Utilizes graph theory to model international tax scenarios, facilitating the identification of optimal transfer strategies.
 
 ### Technical Specifications
-The algorithm conceptualizes the global tax system as a directed graph where nodes represent countries, and edges signify the tax percentage applicable to money transfers between these countries.
+The algorithm conceptualizes the global tax system as a directed graph where nodes represent countries, and edges signify the tax percentage applicable to money transfers between these countries. It implements [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm).
 
 - **Pathfinding:** for any two countries `s`(tart) and `d`(estination), the algorithm determines the set `P_sd` of shortest paths, minimizing tax implications.
 - **Route analysis:** each country appears no more than once in any given route. Routes are compared and deduplicated based on the sorted order of countries they pass through, ensuring unique pathway identification.
